@@ -1,0 +1,51 @@
+<body>
+        <div class="container">
+            <div mat-dialog-content class="dialog">
+                <form [formGroup]="orderForm" (ngSubmit)="onSubmit()" >
+
+                    <div class="item">
+                        <label for="forename">Forename: </label>
+                        <input matInput id="forename" type="text" formControlName="forename">
+                    </div>
+                    
+                    <div class="item">
+                      <label for="surname">Surname: </label>
+                      <input id="surname" type="text" formControlName="surname">  
+                    </div>
+                    
+                    <div class="item">
+                      <label for="emailAddress">Email Address: </label>
+                    <input id="emailAddress" type="text" formControlName="emailAddress">  
+                    </div>
+                    
+                    <div class="item">
+                       <label for="addressLineOne">Address Line 1: </label>
+                        <input id="addressLineOne" type="text" formControlName="addressLineOne"> 
+                    </div>
+                    
+                    <div class="item">
+                        <label for="addressLineTwo">Address Line 2: </label>
+                        <input id="addressLineTwo" type="text" formControlName="addressLineTwo">
+                    </div>
+                    
+                    <div class="item">
+                        <label for="postcode">Postcode: </label>
+                        <input id="postcode" type="text" formControlName="postcode">
+                    </div>
+                    
+
+                    <div class="item dropdown" >
+                        <mat-select formControlName="color">
+                        <mat-option *ngFor="let color of colors" [value]="color.value">
+                          {{color.value}}
+                        </mat-option>
+                    </mat-select>  
+                    </div>
+                    
+                                 
+
+                    <button mat-raised-button type="submit" style="background-color: #C83E4D;" [disabled]="!orderForm.valid">Submit</button>
+                </form>
+            </div>
+        </div>
+</body>

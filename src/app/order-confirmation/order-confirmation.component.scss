@@ -1,0 +1,43 @@
+//THE WHOLE CONFIRMATION CARD THAT POPS UP (INCLUDES BODY AND TITLE)
+.container
+{
+    background-color: #bebe49;;
+}
+
+//WHERE THE CUSTOMER DETAILS ARE DISPLAYED
+.dialog
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+//EVERY DATA VALUE IS AN ITEM - FORENAME: JAKE (THIS IS 1 ITEM)
+.field
+{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5em 0em 0.5em 0em;
+
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Courier New', Courier, monospace;
+  
+}
+
+
+//THE NAME OF THE FIELD (I.E. 'SURNAME')
+.label
+{
+    font-weight: 700;
+    color: black;
+}
+//CONFIRM BUTTON - TO CHANGE BACKGROUND (ORDER-CONFIRMATION.COMPONENT.HTML)
+.button{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 100%;
+    margin-top: 2em;
+    color: #F3F6F6;
+    
+}

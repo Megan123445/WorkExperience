@@ -1,0 +1,20 @@
+<div class="container">
+<h1 mat-dialog-title>Please Confirm Your Order:</h1>
+<div mat-dialog-content class="dialog">
+    <div class="field"><span class="label">Forename: </span>{{data.forename}}</div>
+    <div class="field"><span class="label">Surname: </span>{{data.surname}}</div>
+    <div class="field"><span class="label">Email Address: </span>{{data.emailAddress}}</div>
+    <div class="field"><span class="label">Address Line One: </span>{{data.addressLineOne}}</div>
+    <div class="field"><span class="label">Address Line Two: </span>{{data.addressLineTwo}}</div>
+    <div class="field"><span class="label">Postcode: </span>{{data.postcode}}</div>
+    <div class="field"><span class="label">Color: </span>{{data.color}}</div>
+    
+    <div class="button">
+        <button mat-raised-button class="button" style="background-color: #C83E4D;"(click)="confirm()" >Confirm</button>   
+    </div>
+    
+    
+    
+    
+    </div>
+</div>
